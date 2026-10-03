@@ -2,16 +2,72 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>موقعي الأول</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #111827, #2563eb);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      width: 85%;
+      max-width: 500px;
+      padding: 35px 20px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 25px;
+    }
+
+    h1 {
+      font-size: 35px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    button {
+      padding: 14px 30px;
+      font-size: 20px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    #message {
+      margin-top: 25px;
+      font-size: 22px;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>أهلا في موقعي الأول ❤️</h1>
 
-  <button onclick="document.getElementById('text').innerText='مرحبا بيك في موقعي 😎🔥'">
-    تشغيل
-  </button>
+  <div class="box">
+    <h1>أهلا في موقعي الأول 👋</h1>
 
-  <p id="text"></p>
+    <p>هذا أول موقع أقوم بإنشائه بنفسي 🚀</p>
+
+    <button onclick="startSite()">تشغيل 🚀</button>
+
+    <div id="message"></div>
+  </div>
+
+  <script>
+    function startSite() {
+      document.getElementById("message").innerHTML =
+        "مرحبا بيك في موقعي 😎🔥<br>الموقع يخدم بنجاح!";
+    }
+  </script>
+
 </body>
 </html>

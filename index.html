@@ -19,33 +19,31 @@
     }
 
     .box {
-      width: 85%;
-      max-width: 500px;
-      padding: 35px 20px;
-      background: rgba(255,255,255,0.12);
-      border-radius: 25px;
+      padding: 40px 20px;
     }
 
     h1 {
-      font-size: 35px;
+      font-size: 38px;
     }
 
     p {
       font-size: 20px;
     }
 
-    button {
-      padding: 14px 30px;
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 35px;
+      background: white;
+      color: #2563eb;
+      text-decoration: none;
+      border-radius: 15px;
       font-size: 20px;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      margin-top: 15px;
+      font-weight: bold;
     }
 
-    #message {
-      margin-top: 25px;
-      font-size: 22px;
+    .button:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -53,21 +51,14 @@
 <body>
 
   <div class="box">
-    <h1>أهلا في موقعي الأول 👋</h1>
+    <h1>أهلا بيك في موقعي 👋</h1>
 
-    <p>هذا أول موقع أقوم بإنشائه بنفسي 🚀</p>
+    <p>اكتشف عالم الهواتف 📱</p>
 
-    <button onclick="startSite()">تشغيل 🚀</button>
-
-    <div id="message"></div>
+    <a class="button" href="phones.html">
+      اضغط هنا 📱
+    </a>
   </div>
-
-  <script>
-    function startSite() {
-      document.getElementById("message").innerHTML =
-        "مرحبا بيك في موقعي 😎🔥<br>الموقع يخدم بنجاح!";
-    }
-  </script>
 
 </body>
 </html>

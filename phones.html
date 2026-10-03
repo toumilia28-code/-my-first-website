@@ -1,85 +1,161 @@
-
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>الهواتف</title>
+  <title>عالم الهواتف 📱</title>
 
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #f2f4f7;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
       color: #111;
     }
 
-    header {
-      background: #2563eb;
-      color: white;
-      text-align: center;
-      padding: 25px;
-    }
-
     .phones {
-      padding: 20px;
       display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
+      max-width: 1000px;
+      margin: 30px auto;
     }
 
     .phone {
       background: white;
+      border-radius: 20px;
       padding: 20px;
-      border-radius: 18px;
       text-align: center;
-      box-shadow: 0 4px 12px #0002;
+      box-shadow: 0 4px 12px #ccc;
     }
 
-    .phone img {
-      width: 180px;
-      height: 220px;
-      object-fit: contain;
-    }
-
-    .phone h2 {
+    .phone .image {
+      font-size: 100px;
       margin: 10px;
     }
 
-    .phone p {
-      font-size: 18px;
+    .phone h2 {
+      color: #222;
+    }
+
+    .price {
+      color: #0a8f3c;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .specs {
+      text-align: right;
+      line-height: 1.8;
     }
 
     .back {
       display: block;
-      width: fit-content;
-      margin: 20px auto;
-      padding: 12px 25px;
-      background: #2563eb;
+      width: 180px;
+      margin: 30px auto;
+      padding: 15px;
+      background: #111;
       color: white;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: 12px;
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>📱 عالم الهواتف</h1>
-    <p>شوف الهواتف وقارن بينها</p>
-  </header>
+  <h1>📱 عالم الهواتف</h1>
 
   <div class="phones">
 
     <div class="phone">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/IPhone_15_Pro_vector.svg/512px-IPhone_15_Pro_vector.svg.png">
+      <div class="image">📱</div>
       <h2>iPhone 15 Pro</h2>
-      <p>أداء قوي • كاميرا ممتازة • شاشة OLED</p>
+      <p class="price">3200 DT</p>
+
+      <div class="specs">
+        <p>⚡ المعالج: A17 Pro</p>
+        <p>📸 الكاميرا: 48MP</p>
+        <p>💾 التخزين: 128GB</p>
+        <p>🔋 البطارية: جيدة</p>
+      </div>
     </div>
 
     <div class="phone">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Galaxy_S24.svg/512px-Samsung_Galaxy_S24.svg.png">
-      <h2>Samsung Galaxy S24</h2>
-      <p>شاشة AMOLED • كاميرات متعددة • أداء قوي</p>
+      <div class="image">📱</div>
+      <h2>iPhone 16 Pro</h2>
+      <p class="price">4000 DT</p>
+
+      <div class="specs">
+        <p>⚡ المعالج: A18 Pro</p>
+        <p>📸 الكاميرا: 48MP</p>
+        <p>💾 التخزين: 128GB</p>
+        <p>🔋 البطارية: ممتازة</p>
+      </div>
     </div>
 
-    <div class="
+    <div class="phone">
+      <div class="image">📱</div>
+      <h2>Samsung Galaxy S24</h2>
+      <p class="price">2700 DT</p>
+
+      <div class="specs">
+        <p>⚡ المعالج: Snapdragon / Exynos</p>
+        <p>📸 الكاميرا: 50MP</p>
+        <p>💾 التخزين: 128GB</p>
+        <p>🔋 البطارية: 4000mAh</p>
+      </div>
+    </div>
+
+    <div class="phone">
+      <div class="image">📱</div>
+      <h2>Samsung Galaxy S25</h2>
+      <p class="price">3500 DT</p>
+
+      <div class="specs">
+        <p>⚡ المعالج: Snapdragon</p>
+        <p>📸 الكاميرا: 50MP</p>
+        <p>💾 التخزين: 128GB</p>
+        <p>🔋 البطارية: 4000mAh</p>
+      </div>
+    </div>
+
+    <div class="phone">
+      <div class="image">📱</div>
+      <h2>Xiaomi 14</h2>
+      <p class="price">2500 DT</p>
+
+      <div class="specs">
+        <p>⚡ المعالج: Snapdragon 8 Gen 3</p>
+        <p>📸 الكاميرا: 50MP</p>
+        <p>💾 التخزين: 256GB</p>
+        <p>🔋 البطارية: 4610mAh</p>
+      </div>
+    </div>
+
+    <div class="phone">
+      <div class="image">📱</div>
+      <h2>Google Pixel</h2>
+      <p class="price">2800 DT</p>
+
+      <div class="specs">
+        <p>⚡ المعالج: Google Tensor</p>
+        <p>📸 الكاميرا: ممتازة</p>
+        <p>💾 التخزين: 128GB</p>
+        <p>🔋 البطارية: جيدة</p>
+      </div>
+    </div>
+
+  </div>
+
+  <a class="back" href="index.html">⬅️ الرجوع للرئيسية</a>
+
+</body>
+</html>
+      
